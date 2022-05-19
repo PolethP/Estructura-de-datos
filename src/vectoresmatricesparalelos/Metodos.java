@@ -56,5 +56,33 @@ public class Metodos {
         for (int i = 0; i < promedionotas.length; i++) {
             System.out.println(estudiantes[i]+" \t"+promedionotas[i]);
         }
-    }        
+    }  
+     public void promedioAsignatura (){
+        System.out.println("........ Promedio de la Asignatura..........");
+        for (int c = 0; c < 3; c++) {
+            double suma=0;
+            System.out.println("");
+            for (int f = 0; f < 2; f++) {
+               suma=suma+notas [f][c];
+            }
+            System.out.println(suma/notas.length);
+            
+        }
+         System.out.println(" ");
+            
+        }
+    public void notamayor (){
+        int mayor=0;
+        String nombre=estudiantes [0];
+        for (int f = 0; f < notas.length; f++) {
+            for (int c = 0; c <notas [f].length; c++) {
+                if (notas[f][c]>mayor){
+                    mayor=notas[f][c];
+                    nombre=estudiantes [f];
+                }
+            }
+ 
+        }
+        System.out.println("El estudiante con mayor nota es "+nombre);
+    }
 }
