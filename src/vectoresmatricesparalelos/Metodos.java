@@ -40,5 +40,21 @@ public class Metodos {
              
          }
      }
+      public void promedio(){
+        promedionotas=new double[2];
+        for (int f = 0; f < notas.length; f++) {
+            int suma=0;
+            for (int c = 0; c <notas [f].length; c++) {
+                suma=suma+notas [f][c];
              
+            }
+            promedionotas [f]=suma/notas[f].length;
+        }
+    }
+    public void imprimirPromedio (){
+        System.out.println(".........El promedio de cada estudiante es............");
+        for (int i = 0; i < promedionotas.length; i++) {
+            System.out.println(estudiantes[i]+" \t"+promedionotas[i]);
+        }
+    }        
 }
