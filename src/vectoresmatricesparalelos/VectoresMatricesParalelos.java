@@ -14,6 +14,9 @@ public class VectoresMatricesParalelos {
         ms.cargar();
         ms.mostrar();
         System.out.println(" ");
+        ms.promedio();
+        ms.imprimirPromedio();
+        
     }
     
 }
